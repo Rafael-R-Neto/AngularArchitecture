@@ -8,7 +8,7 @@ import { Services } from './services/services';
 })
 export class AppComponent {
 
-  @Input() fakeJson: any[];
+  @Input() tenants: any[];
 
   title = 'AngularArchitecture';
 
@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   testGetRequest() {
-    this.servive.getData('users').subscribe(retorno => console.log(retorno));
+    this.servive.getData('empresa01/tenant').subscribe(retorno => this.tenants = retorno);
     
   }
 }

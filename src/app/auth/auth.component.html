@@ -1,0 +1,35 @@
+<!-- <div>
+  <button class="btn" (click)="testGetRequest()">GET Tenants</button>
+
+  <div *ngIf="tenants?.length > 0">
+    <div class="h3">Tenants available:</div>
+    <ul *ngFor="let i of tenants">
+      <li>{{ i.name }}</li>
+      <li>{{ i.hostName }}</li>
+
+      <hr />
+    </ul>
+  </div>
+</div> -->
+
+<div>
+    <form action="">
+      <div className="form-control">
+        <label htmlFor="nome">Nome</label>
+        <input type="text" name="nome"/>
+      </div>
+      <div className="form-control">
+        <label htmlFor="email">Email</label>
+        <input type="email" name="email"/>
+      </div>
+      <div className="form-control">
+        <label htmlFor="password">Senha</label>
+        <input type="password" name="password"/>
+      </div>
+      <div className="form-control">
+        <label htmlFor="cargo">Cargo</label>
+        <input type="text" name="cargo"/>
+      </div>
+      <button class="btn">Cadastrar</button>
+    </form>
+  </div>
