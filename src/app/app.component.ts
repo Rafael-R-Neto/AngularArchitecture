@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   testGetRequest() {
-    this.servive.getData('empresa01/tenant').subscribe(retorno => this.tenants = retorno);
+    this.servive.getAll('empresa01/tenant').subscribe(retorno => this.tenants = retorno);
     
   }
 }
